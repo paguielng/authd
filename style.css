@@ -1,0 +1,84 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 0px #888;
+}
+
+h1 {
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #000;
+}
+
+button {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #444;
+}
+
+.error {
+    color: #fff;
+    background: #d00;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+}
+
+.success {
+    color: #fff;
+    background: #080;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+}
+
+.message {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #d00;
+    font-weight: bold;
+    font-size: 0.8em;
+}

@@ -1,13 +1,26 @@
 {
+  "version": 2,
   "functions": {
     "api/**/*.php": {
-      "runtime": "vercel-php@0.7.5"
+      "runtime": "vercel-php@0.7.5",
+      "maxDuration": 30
     }
   },
   "routes": [
-    { "src": "/(.*)", "dest": "/$1" }
+    {
+      "src": "/(.*\\.(?:css|js|gif|jpg|jpeg|png|svg|ico|woff|woff2|ttf|eot))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/login.php"
+    },
+    {
+      "src": "/(login|logout|upload)\\.php",
+      "dest": "/$1.php"
+    }
   ],
-  "rewrites": [
-    { "source": "/", "destination": "/login.php" }
-  ]
+  "env": {
+    "PHP_VERSION": "8.2"
+  }
 }

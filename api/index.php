@@ -1,7 +1,7 @@
 <?php
- /** header("Location: login.php");
- *   exit;
- *   ?> )
+/** header("Location: login.php");
+  *   exit;
+  *   ?> )
 */
 require __DIR__ . '/config.php';
 

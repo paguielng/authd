@@ -5,7 +5,7 @@
  */
 
 // Mot de passe commun pour l'accès au site
-define('ACCESS_PASSWORD', 'mon_mot_de_passe_secret');
+define('ACCESS_PASSWORD', 'admin123');
 
 // Configuration Supabase
 define('SUPABASE_URL', 'https://VOTRE_PROJET_ID.supabase.co');
